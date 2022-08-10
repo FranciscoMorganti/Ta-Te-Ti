@@ -214,6 +214,7 @@ function comenzarJuego(){
     fichasJugador1.style.visibility= 'visible';
     fichasJugador2.style.visibility= 'visible';
     partidaIniciada= true;
+    contador= 0;
 }
 
 casillasTateti.forEach((casilla, i) => {
