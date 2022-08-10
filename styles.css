@@ -30,7 +30,7 @@ body{
 .tateti__header{
     position: relative;
     width: 100%;
-    height: 15vh;
+    height: 10vh;
     font-family: 'Quicksand';
     display: flex;
     justify-content: center;
