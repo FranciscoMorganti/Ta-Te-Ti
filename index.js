@@ -294,7 +294,6 @@ function moverFicha(fichaSeleccionada, casilla, i){
         ponerFicha(casilla, i);
         casillasTateti[fichaSeleccionada].innerHTML= '';
         tablero[fichaSeleccionada]= '';
-        contador += 1;
     }
     contadorTateti.innerHTML= contador;
 }
