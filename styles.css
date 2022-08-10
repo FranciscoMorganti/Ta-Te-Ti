@@ -200,6 +200,7 @@ h1{
     display: flex;
     flex-direction: column;
     justify-content: center;
+    background-color: red;
 }
 
 .tateti__section-1{
