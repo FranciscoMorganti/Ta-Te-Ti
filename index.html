@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="styles.css">
+    <script class="Tateti.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <link rel="icon" type="image/ico" href="./favicon.ico"/>
+    <title>Ta Te Ti</title>
+</head>
+<body>
+    <header class="tateti__header">
+        <div class="tateti__cambio-de-tema">
+            <ion-icon name="moon-outline"></ion-icon>
+        </div>
+        <div class="tateti__perfil-jugadores">
+            <div class="tateti__perfil-jugador">
+                <p></p>
+                <h2>Jugador 1</h2>
+                <ion-icon name="chevron-down-outline"></ion-icon>
+            </div>
+            <div class="tateti__perfil-jugador">
+                <p></p> 
+                <h2>Jugador 2</h2>
+                <ion-icon name="chevron-down-outline"></ion-icon>
+            </div>
+            <div class="tateti__configuracion-jugadores">
+                <div class="tateti__contenedor-configuracion">
+                    <ion-icon name="close-circle-outline" class="tateti__configuracion-cerrar"></ion-icon>
+                    <h2></h2>
+                    <div class="tateti__configuracion">
+                        <input type="text" placeholder="Escribe tu nombre aqui..." class="tateti__input-nombre">
+                        <div class="tateti__ficha-color">
+                            <select class="tateti__select-ficha">
+                                <option></option>
+                                <option></option>
+                            </select>
+                            <label for="configuracion-color" class="tateti__seleccionar-color"><ion-icon name="color-palette-outline"></ion-icon><input type="color" id="configuracion-color"></label>
+                        </div>
+                    </div>
+                    <div class="tateti__configuracion-ok">Ok</div>
+                </div>
+            </div>
+        </div>
+        <!-- <div class="tateti__musica"><ion-icon name="musical-notes-outline"></ion-icon></div> -->
+    </header>
+    <main class="tateti__main">
+        <h1>Turno de </h1>
+        <div class="tateti__alerts">
+            <p>Es el turno de </p>
+            <p>La partida aún no ha sido inciada.</p>
+            <p>Aún no se han ingresado los datos del los jugadores</p>
+        </div>
+        <section class="tateti__section-1">
+            <div class="tateti__jugador-1-fichas">
+                <p>X</p>
+                <p>X</p>
+                <p>X</p>
+            </div>
+            <div class="tateti__tablero">
+                <div class="tateti__espacio"><div class="tateti__casilla"></div></div>
+                <div class="tateti__espacio"><div class="tateti__casilla"></div></div>
+                <div class="tateti__espacio"><div class="tateti__casilla"></div></div>
+                <div class="tateti__espacio"><div class="tateti__casilla"></div></div>
+                <div class="tateti__espacio"><div class="tateti__casilla"></div></div>
+                <div class="tateti__espacio"><div class="tateti__casilla"></div></div>
+                <div class="tateti__espacio"><div class="tateti__casilla"></div></div>
+                <div class="tateti__espacio"><div class="tateti__casilla"></div></div>
+                <div class="tateti__espacio"><div class="tateti__casilla"></div></div>
+            </div>
+            <div class="tateti__jugador-2-fichas">
+                <p>O</p>        
+                <p>O</p>
+                <p>O</p>
+            </div>
+        </section>
+        <section class="tateti__section-2">
+            <div class="tateti__herramientas">
+                <ion-icon name="play-circle-outline" class="tateti__iniciar-partida"></ion-icon>
+                <ion-icon name="refresh-circle-outline" class="tateti__reiniciar-partida"></ion-icon>
+            </div>
+        </section>
+        <div class="tateti__contenedor-modal-ganador">
+            <div class="tateti__modal-ganador">
+                <div class="tateti__icono-ganador">
+                    <ion-icon name="trophy-outline"></ion-icon>
+                    <ion-icon name="star-outline"></ion-icon>
+                </div>
+                <div class="tateti__texto-ganador">
+                    <h2></h2>
+                    <h3></h3>
+                    <h4></h4>
+                    <h5><ion-icon name="refresh-outline"></ion-icon>Jugar de nuevo</h5>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="tateti__footer">
+        <div class="tateti__movimientos">
+            <p>Movimientos:</p>
+            <p class="tateti__contador">0</p>
+        </div>
+    </footer>
+    <script type="text/javascript" src="index.js"></script>
+</body>
+</html>
